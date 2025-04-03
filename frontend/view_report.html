@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Report - Vaccine Portal</title>
+    <link rel="stylesheet" href="view_report.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1 class="logo">Vaccine Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="add_details.html">Add Details</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- User Details Section -->
+    <div class="report-container">
+        <h2>Vaccination Report</h2>
+        <div class="user-info">
+            <p><strong>Name:</strong> <span id="userName"></span></p>
+            <p><strong>Age:</strong> <span id="userAge"></span></p>
+            <p><strong>Phone:</strong> <span id="userPhone"></span></p>
+            <p><strong>Email:</strong> <span id="userEmail"></span></p>
+            <p><strong>User ID:</strong> <span id="userId"></span></p>
+        </div>
+
+        <!-- Vaccine Report Table -->
+        <table id="vaccineReport">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Vaccine Name</th>
+                    <th>Date</th>
+                    <th>No. of Doses</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be inserted dynamically -->
+            </tbody>
+        </table>
+
+        <!-- Print Button -->
+        <button id="printReport">Print Report</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Vaccine Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="view_report.js"></script>
+</body>
+</html>

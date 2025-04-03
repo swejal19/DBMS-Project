@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information - Vaccine Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1 class="logo">Vaccine Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="login.html">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- User Information Form -->
+    <div class="form-container">
+        <h2>Enter Your Details</h2>
+        <form id="userInfoForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="number" id="age" placeholder="Age" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <input type="email" id="email" placeholder="Email (Optional)">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Vaccine Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="user_info.js"></script>
+</body>
+</html>

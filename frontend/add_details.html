@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Vaccine Details</title>
+    <link rel="stylesheet" href="add_details.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1 class="logo">Vaccine Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="view_report.html">View Report</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- User Details Section -->
+    <section class="user-details">
+        <h2>User Information</h2>
+        <p><strong>Name:</strong> <span id="userName"></span></p>
+        <p><strong>Age:</strong> <span id="userAge"></span></p>
+        <p><strong>Phone:</strong> <span id="userPhone"></span></p>
+        <p><strong>Email:</strong> <span id="userEmail"></span></p>
+        <p><strong>Unique ID:</strong> <span id="userId"></span></p>
+    </section>
+
+    <!-- Vaccine Details Table -->
+    <section class="vaccine-details">
+        <h2>Vaccine To-Do List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Vaccine Name</th>
+                    <th>Date</th>
+                    <th>Doses Completed</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="vaccineTableBody">
+                <!-- Rows will be added dynamically -->
+            </tbody>
+        </table>
+        <button id="addRowButton">➕ Add Row</button>
+        <button id="saveButton">Save</button>
+    </section>
+
+    <script src="add_details.js"></script>
+</body>
+</html>
