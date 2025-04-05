@@ -1,5 +1,5 @@
-// Handle Login
 document.addEventListener("DOMContentLoaded", function () {
+    // Login Form Logic
     let loginForm = document.getElementById("loginForm");
     if (loginForm) {
         loginForm.addEventListener("submit", function (event) {
@@ -18,6 +18,42 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 alert("Invalid email or password. Please try again.");
             }
+        });
+    }
+
+    // Profile Form Logic
+    let profileForm = document.getElementById("profileForm");
+    if (profileForm) {
+        profileForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const user = {
+                userId: document.getElementById("userId").value,
+                firstName: document.getElementById("firstName").value,
+                lastName: document.getElementById("lastName").value,
+                email: document.getElementById("email").value,
+                gender: document.getElementById("gender").value,
+                age: document.getElementById("age").value
+            };
+
+            fetch("/api/userinfo", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(user)
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert("Profile info saved successfully!");
+                    window.location.href = "index.html";
+                } else {
+                    alert("Error saving profile info.");
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error);
+            });
         });
     }
 });
