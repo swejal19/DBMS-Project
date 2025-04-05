@@ -157,3 +157,24 @@ footer {
     padding: 10px 0;
     margin-top: auto;
 }
+.profile-btn {
+    background: #ffc107;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.profile-btn:hover {
+    background: #e0a800;
+}
+
+/* For dropdown in profile form */
+select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
